@@ -1,0 +1,14 @@
+<h1>Word Search List Builder</h1>
+
+<label for="wordInput">Enter your words (comma or line-separated):</label>
+<textarea id="wordInput" placeholder="e.g. apple, banana, cherry"></textarea>
+
+<label for="wordsPerPuzzle">How many words per puzzle?</label>
+<input type="number" id="wordsPerPuzzle" value="10" min="1" max="100">
+
+<div class="button-row">
+  <button onclick="generateList()">Create Word Lists</button>
+  <button onclick="copyOutput()">Copy List</button>
+</div>
+
+<div id="output"></div>
